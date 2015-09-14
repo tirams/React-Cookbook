@@ -77,6 +77,22 @@ render: function() {
   );
 }
 ```
+
+#### User map and sort (use `sort-by` https://github.com/staygrimm/sort-by#example)) to iterate and sort
+```
+var App = React.createClass({
+  render () {
+    var items = items.sort().map((item) => <li>{item}</li>);
+    return (
+      <div>
+        <h1>hello!</h1>
+        <ul>{items}<ul>
+      </div>
+    );
+  }
+});
+```
+
 [view fiddle](http://jsfiddle.net/ggVt6/)
 
 #### Use 'classSet' to toggle classes
